@@ -1,0 +1,30 @@
+// Place your key bindings in this file to override the defaults
+[
+    // NAVIGATION
+
+    // FILE TREE
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus",
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "explorer.newFolder",
+        "when": "exolorerViewletFocus"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "deleteFile",
+        "when": "exolorerViewletVisible && filesExplorerFocus && !explorerResourceReadon"
+    },
+    // {
+    //     "key": "ctrl+f",
+    //     "command": "extension.vim_cmd",
+    //     "args": {
+    //         "vim_cmd": "<leader>f"
+    //     },
+    //     "when": "editorLangId == 'plaintext' && editorTextFocus && !inDebugRepl"
+    // }
+
+]

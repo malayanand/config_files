@@ -1,0 +1,47 @@
+{
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": false,
+    "breadcrumbs.enabled": false,
+    "editor.codeActionsOnSave": {},
+
+    "editor.lineNumbers": "relative",
+    "vim.leader": "<Space>",
+    "vim.normalModeKeyBindings": [
+        // NAVIGATION
+        // switch b/w buffers
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+        
+        // splits        
+        { "before": ["leader", "v"], "commands": [":vsplit"] },
+        { "before": ["leader", "s"], "commands": [":split"] },
+
+        // panes
+        {
+            "before": ["leader", "h"],
+            "commands": ["workbench.action.focusLeftGroup"],
+        },
+        {
+            "before": ["leader", "l"],
+            "commands": ["workbench.action.focusRightGroup"],
+        },
+        {
+            "before": ["leader", "j"],
+            "commands": ["workbench.action.focusBelowGroup"],
+        },
+        {
+            "before": ["leader", "k"],
+            "commands": ["workbench.action.focusAboveGroup"],
+        },
+        //FILE TREE
+        {
+            "before": ["leader", "n", "e"],
+            "commands": ["workbench.explorer.fileView.focus"]
+        },
+        // SEARCH IN FILE
+        {
+            "before": ["leader", "f"],
+            "commands": ["editor.action.startFindReplaceAction"],
+        }
+    ],
+}
